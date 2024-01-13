@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="EstudandoHeranca" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="AppPessoa" />
+    <module name="estudos" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="Correcao_Avaliacao_01.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
