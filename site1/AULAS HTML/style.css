@@ -1,0 +1,17 @@
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+body {
+    background-color: aqua;
+}
+
+p {
+    text-align: center;
+}
+
+#caixa-principal{
+    background-color: white;
+    width: 1050px;
+}
