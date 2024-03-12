@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+*{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Dokdo', Courier, monospace;
+}
+
+img{
+    width: 500px;
+}
+
+#futebol {
+    text-decoration: underline;
+}
+
+.italico {
+    font-style: italic;
+}
+
+#navegacao a{
+    text-decoration: none;
+}
+
+#navegacao a:hover {
+    text-decoration: underline;
+}
+
+[href="futebol.html"] {
+    font-weight: bold;
+}

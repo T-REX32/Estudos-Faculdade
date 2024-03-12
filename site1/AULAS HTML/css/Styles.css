@@ -1,0 +1,52 @@
+*{
+    font-family: sans-serif;
+    color: red;
+}
+
+#tituloPrincipal{
+    text-align: center;
+    color: rgb(57, 57, 238);
+}
+
+.imagens{
+    height: 300px;
+    width: 400px;
+}
+
+.family.bold {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bolder .familia {
+    color: blue;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div,p{
+    text-align: center;
+}
+
+div p {
+    color: purple;
+}
+
+div > p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div + a{
+    background-color: aqua;
+}
+
+p ~ ul {
+    background-color: skyblue;
+}
+
+[href="Formulário.html"]:hover {
+    font-style: italic;
+}
+
