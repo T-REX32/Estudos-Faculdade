@@ -50,3 +50,27 @@ p ~ ul {
     font-style: italic;
 }
 
+
+a:active {
+    color: yellow;
+}
+
+p::after{
+    content: "Dale pau marco véio";
+}
+
+blockquote::before {
+    content: "“";
+}
+
+input:checked {
+    background-color: lightgreen;
+}
+
+input:default {
+    border: 2px solid blue;
+}
+
+input:disabled {
+    opacity: 0.5;
+}
