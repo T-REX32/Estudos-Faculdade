@@ -1,0 +1,66 @@
+
+* {
+    box-sizing: border-box;
+}
+
+        
+
+/* Cabeçalho */
+
+header{
+    text-align: center;
+    background-color: #DB820A;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    padding: 1em 0 0.5em 0;
+    }
+
+header nav{
+    display: flex;
+    background-color: #B16500;
+    justify-content: space-around;
+}
+
+header nav a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+header nav a:hover {
+    background-color: #FFBB60;
+    color: black;
+}
+
+/* principal */
+
+main {
+    display: flex;
+    flex-wrap: wrap; /*quebra linhas*/
+}
+
+main section {
+    flex: 50%;
+    padding: 1em;
+}
+
+main section h2,
+main section h3 {
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+/* rodapé */
+
+
+footer {
+    text-align: center;
+    background-color: #F4A234;
+    padding: 2em;
+    color: #fff;
+}
