@@ -1,0 +1,114 @@
+header{
+    background-color: blueviolet;
+    margin: auto;
+}
+
+.tabela {
+    margin: auto;
+}
+
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    padding: 1em 0 0.5em 0;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.imagens{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    margin-top: 20px; /* Adiciona um espaço entre o texto e as imagens */
+}
+
+img{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+.corpo {
+    background-color: rgb(166, 86, 241);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.caixa-lista {
+    background-color: rgb(166, 86, 241);
+    color: white;
+}
+
+.Texto-baixo{
+    background-color: rgb(166, 86, 241);
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: rgb(166, 86, 241);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+header h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    padding: 1em 0 0.5em 0;
+}
+
+form {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="month"],
+textarea,
+select,
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 10px; /* Adiciona espaço entre o texto e o input */
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="color"] {
+    height: 30px;
+}

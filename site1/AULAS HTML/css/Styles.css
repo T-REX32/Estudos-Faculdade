@@ -1,38 +1,33 @@
 *{
     font-family: sans-serif;
-    color: red;
+    
 }
 
 #tituloPrincipal{
     text-align: center;
-    color: rgb(57, 57, 238);
+    color: white;
 }
 
-.imagens{
-    height: 300px;
-    width: 400px;
-}
+
 
 .family.bold {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
+
 }
 
-.bolder .familia {
-    color: blue;
+.tabela .familia {
+    color: black;
 }
+
+
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div,p{
-    text-align: center;
-}
 
-div p {
-    color: purple;
-}
+
 
 div > p {
     font-family: 'Times New Roman', Times, serif;
@@ -43,7 +38,7 @@ div + a{
 }
 
 p ~ ul {
-    background-color: skyblue;
+    background-color: rgb(155, 83, 223);
 }
 
 [href="Formulário.html"]:hover {
@@ -51,13 +46,19 @@ p ~ ul {
 }
 
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
 a:active {
     color: yellow;
 }
 
-p::after{
-    content: "Dale pau marco véio";
-}
+
 
 blockquote::before {
     content: "“";
