@@ -1,0 +1,101 @@
+#carro {
+    width: 400px;
+    height: 100px;
+    background-color: red;
+    margin: auto;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: moverCarro 5s linear infinite;   
+
+    animation-direction: alternate;
+}
+
+#parteDeCimaCarro {
+    width: 210px;
+    height: 55px;
+    background-color: red;
+    top: 50%;
+    left: 60%;
+
+    position: absolute;
+
+    transform: translate(-50%, -190%);
+
+    animation: moverCarro 5s linear infinite;
+
+    animation-direction: alternate;
+
+    
+}
+
+#bola1 {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+
+    transform: translate(80%, 10%);
+    
+    animation: moverCarro 5s linear infinite;
+
+    animation-direction: alternate;
+}
+
+#bola2 {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+
+    transform: translate(-200%, 10%);
+
+    animation: moverCarro 5s linear infinite;
+
+    animation-direction: alternate;
+}
+
+#janela {
+    width: 100px;
+    height: 55px;
+    background-color: rgb(209, 199, 199);
+    top: 50%;
+    left: 60%;
+
+    position: absolute;
+
+    transform: translate(7%, -190%);
+
+    animation: moverCarro 5s linear infinite;
+
+    animation-direction: alternate;
+}
+
+#chao {
+    width: 2    000px;
+    height: 100px;
+    background-color: grey;
+
+    transform: translate(0%, 390%);
+}
+
+@keyframes moverCarro {
+ 0% {
+    left: 0;
+ }
+ 100% {
+    left: calc(100% - 100px);
+ }  
+}
