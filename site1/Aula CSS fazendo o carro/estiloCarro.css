@@ -28,7 +28,6 @@
 
     animation-direction: alternate;
 
-    
 }
 
 #bola1 {
@@ -92,10 +91,14 @@
 }
 
 @keyframes moverCarro {
- 0% {
-    left: 0;
- }
- 100% {
-    left: calc(100% - 100px);
- }  
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(50% - 50px);
+    }
+    100% {
+        left: calc(100% - 100px);
+    }
 }
+

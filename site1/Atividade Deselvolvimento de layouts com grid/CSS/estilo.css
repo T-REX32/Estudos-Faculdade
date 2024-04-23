@@ -1,0 +1,37 @@
+.titulo-nav {
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.conteudo {
+    display: grid;
+
+    grid-template-columns: 600px auto;
+    grid-template-rows: 300px;
+}
+
+.conteudo p {
+    grid-column: 2;
+}
+
+.imagem {
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+.imagem img {
+    height: 300px;
+    width: 500px;
+}
