@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define três linhas: uma para o cabeçalho, uma para o conteúdo e uma para o rodapé */
+    min-height: 100vh;
+}
+
+header, footer {
+    height: 50px;
+    width: auto;
+    background-color: #333;
+    
+    padding: 20px;
+
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: rgb(117, 108, 108);
+    padding: 20px;
+}
+
+img {
+    width:900px;
+    height: 750px;
+}

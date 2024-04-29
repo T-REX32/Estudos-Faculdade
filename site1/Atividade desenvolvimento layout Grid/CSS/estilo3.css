@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; /* Deixa o Body do tamanho da tela toda, mesmo que tenha poucas coisas dentro dele*/
+}
+
+main {
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 30px;
+}
+
+section {
+    background-color: gray;
+    height: auto;
+}
