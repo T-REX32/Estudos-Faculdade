@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
 
 *{
-    color: green;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+#cabecalho {
+    background-color: rgb(241, 86, 30);
 }
 
 h1 {
     font-family: 'Dokdo', Courier, monospace;
+    text-align: center;
 }
 
 img{
@@ -21,6 +27,10 @@ img{
     font-style: italic;
 }
 
+#navegacao {
+    text-align: center;
+}
+
 #navegacao a{
     text-decoration: none;
 }
@@ -32,3 +42,46 @@ img{
 [href="futebol.html"] {
     font-weight: bold;
 }
+
+section {
+    background-color: rgb(255, 144, 103);
+    height: 500px;
+
+    padding: 10px;  
+}
+
+footer {
+    background-color: rgb(241, 86, 30);
+
+    height: 100px;
+    line-height: 100px;
+
+    text-align: center;    
+}
+
+
+
+
+/* Tabela */
+table {
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+th {
+    background-color: #CA7D09;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: darkgray;
+}
+
