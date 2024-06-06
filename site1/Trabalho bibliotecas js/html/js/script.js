@@ -1,36 +1,33 @@
+// script.js
 
-google.charts.load('current', {'packages':['corechart', 'table', 'treemap']});
+google.charts.load('current', {'packages': ['corechart', 'table', 'treemap']});
 google.charts.setOnLoadCallback(drawChart);
 
-var name = 'Microsoft'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/logo?name=' + name,
-    headers: { 'X-Api-Key': 'fSEQeTwVlfEJ2E3zwgsqZu1lI20lDsRKZQdtFox6'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result[0].image);
-
-        // coloque aqui o comando pra mostrar a imagem
-        $('#images-container img').attr('src', result[0].image).css({'width': '200px', 'height': 'auto'});
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});
-
-function drawChart() {
-    // Restante do código para os gráficos...
-
-    // Adicionando a imagem gerada pela API Ninjas
-    var imagesContainer = document.getElementById('images-container');
-    var img = document.createElement('img');
-    img.src = 'https://api.api-ninjas.com/v1/randomimage?category=nature';
-    img.alt = 'Imagem de cliente';
-    imagesContainer.appendChild(img);
+function fetchLogos(clientNames) {
+    clientNames.forEach(name => {
+        $.ajax({
+            method: 'GET',
+            url: 'https://api.api-ninjas.com/v1/logo?name=' + name,
+            headers: { 'X-Api-Key': 'fSEQeTwVlfEJ2E3zwgsqZu1lI20lDsRKZQdtFox6' },
+            contentType: 'application/json',
+            success: function(result) {
+                if (result && result.length > 0) {
+                    console.log(result[0].image);
+                    // Cria um novo elemento de imagem para cada logo
+                    var img = $('<img>').attr('src', result[0].image).css({'width': '150px', 'height': 'auto'});
+                    $('#images-container').append(img);
+                }
+            },
+            error: function ajaxError(jqXHR) {
+                console.error('Error: ', jqXHR.responseText);
+            }
+        });
+    });
 }
 
-
+// Lista de nomes de clientes para buscar os logos
+var clientNames = ['Microsoft', 'Google', 'Apple', 'Amazon', 'Facebook'];
+fetchLogos(clientNames);
 
 function drawChart() {
     // Dados para o gráfico de colunas
@@ -89,14 +86,14 @@ function drawChart() {
         vAxis: {
             title: 'Vendas'
         },
-        lineWidth: 2, // Espessura da linha
-        areaOpacity: 0.3, // Opacidade da área preenchida
+        lineWidth: 2,
+        areaOpacity: 0.3,
         series: {
-            0: { color: '#3366cc' } // Cor da linha
+            0: { color: '#3366cc' }
         },
-        curveType: 'function', // Tipo de curva
-        lineDashStyle: [4, 4], // Estilo de tracejado da linha
-        seriesType: 'area', // Tipo de série
+        curveType: 'function',
+        lineDashStyle: [4, 4],
+        seriesType: 'area',
         series: {
             0: {
                 type: 'area',
