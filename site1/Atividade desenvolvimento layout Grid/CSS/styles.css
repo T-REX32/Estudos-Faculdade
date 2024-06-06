@@ -99,7 +99,7 @@ nav ul li a {
     height: 40px;
     border: none;
     border-radius: 20px;
-    background-color: #ff69b4; /* Cor rosa */
+    background-color: #ff69b4; 
     color: #fff;
     font-size: 18px;
     text-align: center;
@@ -117,7 +117,7 @@ nav ul li a {
 
 .impacto h1 {
     font-size: 24px;
-    color: #ff69b4; /* Cor rosa */
+    color: #ff69b4;
 }
 
 .botoes-tamanhos {
