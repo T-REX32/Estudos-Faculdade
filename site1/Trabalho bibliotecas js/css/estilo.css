@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o contêiner de gráficos */
+.charts-container {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o contêiner de imagens */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza as imagens na linha */
+    margin-top: 20px;
+}
+
+/* Estilo para cada imagem na galeria */
+.images-container img {
+    width: 150px; /* Define uma largura fixa para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+    transition: transform 0.3s; /* Transição suave para o hover */
+}
+
+/* Estilo para a imagem ao passar o mouse (hover) */
+.images-container img:hover {
+    transform: scale(1.05); /* Leve aumento no tamanho da imagem */
+}
