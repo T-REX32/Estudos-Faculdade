@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">TigrinhoBet</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cadastre-se</a>
+                        </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#">Futebol</a></li>
+                            <li><a class="dropdown-item" href="#">Basquete</a></li>
+                            <li><a class="dropdown-item" href="aeroportos.html">Aeroportos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="Container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3 mx-auto text-center">
+                <h1 class="mb-5">Bem vindo ao Tigrinho Bet!</h1>
+            </div>
+
+            <div class="row ms-0">
+                <div class="col-xs-12 col-md-6">
+                    <h2>Futebol</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, alias doloribus distinctio animi
+                        unde provident, fugit voluptas nulla sapiente molestiae enim dolores quas dolorem, deserunt sit!
+                        Voluptates reiciendis vero voluptatem?</p>
+                </div>
+
+                <div class="col-xs-12 col-md-6 mb-5">
+                    <h2>Basquete</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, alias doloribus distinctio animi
+                        unde provident, fugit voluptas nulla sapiente molestiae enim dolores quas dolorem, deserunt sit!
+                        Voluptates reiciendis vero voluptatem?</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-md-3 mx-auto text-center ">
+                <h2 class="mb-5">Conheça alguns dos times brasileiros:</h2> 
+            </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Corinthians
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>
+                            Claro! O Sport Club Corinthians Paulista, comumente conhecido como Corinthians, é um dos
+                            clubes mais populares e tradicionais do Brasil.
+                            Fundado em 1910, o Corinthians possui uma base de torcedores fervorosa e uma história rica
+                            no futebol brasileiro.
+                            Atualmente, o Corinthians compete no Campeonato Brasileiro Série A e em outras competições
+                            nacionais e internacionais.
+                            O desempenho da equipe pode variar ao longo das temporadas, com períodos de grande sucesso e
+                            outros de desafios.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Palmeiras
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>O Palmeiras é outro gigante do futebol brasileiro, com uma história igualmente rica e
+                            uma base de fãs dedicada. Fundado em 1914, o Palmeiras é conhecido por sua tradição de
+                            conquistas, tendo ganhado numerosos títulos nacionais e internacionais ao longo de sua
+                            história.
+
+                            Assim como o Corinthians, o Palmeiras compete no Campeonato Brasileiro Série A e em outras
+                            competições importantes tanto no cenário nacional quanto internacional. O clube é conhecido
+                            por investir em talentos promissores e por sua estrutura profissional.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        São Paulo
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>O São Paulo Futebol Clube é um dos clubes mais emblemáticos e bem-sucedidos do futebol
+                            brasileiro. Fundado em 1930, o São Paulo possui uma história repleta de conquistas,
+                            incluindo títulos nacionais e internacionais.
+
+                            Ao longo dos anos, o São Paulo estabeleceu-se como um dos principais competidores do futebol
+                            brasileiro, com uma base de torcedores apaixonada e uma reputação de excelência no esporte.
+                            O clube é conhecido por sua infraestrutura sólida e pela formação de talentos na sua famosa
+                            categoria de base.
+
+                            O São Paulo compete no Campeonato Brasileiro Série A, bem como em outras competições
+                            importantes, e tem como objetivo permanecer entre os principais clubes do país.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="http://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+    <script src="suamae.js"></script>
+</body>
+
+</html>
